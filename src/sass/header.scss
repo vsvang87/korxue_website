@@ -1,2 +1,60 @@
 @use "colors" as *;
+@use "mixin" as *;
 
+.header {
+    padding: 1rem 0;
+    // background-image: url(../images/photo5.jpg);
+    position: relative;
+    min-height: 100vh;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/photo5.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        inset: 0;
+        filter: brightness(50%);
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .nav-content {
+        padding-top: 2rem;
+        @include flex_space_between;
+        img {
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+        }
+        .music-div {
+            .contact-btn {
+                text-decoration: none;
+                color: white;
+            }
+            .music-btn {
+                text-decoration: none;
+                color: white;
+                border: 1px solid white;
+                padding: 1rem 1.5rem;
+                margin-left: 2.5rem;
+            }
+
+        }
+    }
+   .header-content {
+    padding: 2rem 0;
+    @include flex_align_left;
+    flex-direction: column;
+    min-height: 90vh;
+    h2, h1 {
+        color: white;
+        letter-spacing: 0.1rem;
+    }
+    h1 {
+        font-size: 4.5rem;
+        font-family: 'Kanit', sans-serif;
+    }
+   }
+    
+}
