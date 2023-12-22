@@ -13,3 +13,8 @@
     justify-content: center;
     align-items: flex-start;
 }
+@mixin flex_align_top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

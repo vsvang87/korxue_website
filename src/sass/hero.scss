@@ -1,6 +1,50 @@
 @use "colors" as *;
-
+@use "mixin" as *;
 
 .hero-section {
     min-height: 90vh;
+    position: relative;
+    padding: 3rem 0;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url(../images/photo4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        filter: brightness(50%);
+        opacity: .8;
+        background-attachment: fixed;
+    }
+    .hero-content {
+        @include flex_center;
+        min-height: 90vh;
+        .content {
+            @include flex_align_top;
+            .col {
+                width: 50%;
+                color: white;
+                img {
+                    width: 100%;
+                    position: relative;
+                    background: red;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 2rem;
+                        right: 2rem;
+                        left: 0;
+                        bottom: 0;
+                       
+                    }
+                }
+            }
+            .hero-bio {
+                padding-left: 3rem;
+            }
+        }
+        
+    }
 }

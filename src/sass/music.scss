@@ -1,0 +1,20 @@
+@use "mixin" as *;
+@use "colors" as *;
+
+.music-section {
+    min-height: 90vh;
+    padding: 3rem 0;
+    background: $darkGray;
+    .music-content {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        .music-card {
+            width: 50%;
+            .video {
+                width: 50%;
+            }
+        }
+    }
+}
