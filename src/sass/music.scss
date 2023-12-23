@@ -5,16 +5,12 @@
     min-height: 90vh;
     padding: 3rem 0;
     background: $darkGray;
+    color: white;
     .music-content {
         display: grid;
         align-items: center;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        .music-card {
-            width: 50%;
-            .video {
-                width: 50%;
-            }
-        }
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1rem;
+       
     }
 }

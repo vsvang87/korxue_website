@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import Music from './components/Music'
 import Contact from './components/Contact'
 import "./sass/style.scss";
-// import VIDEOS from './components/musicData.js';
+import VIDEOS from './components/musicData.js';
 
 
 
@@ -15,7 +15,7 @@ function App() {
     <div>
      <Header/>
      <Hero/>
-     <Music/>
+     <Music videos={VIDEOS}/>
      <Contact/>
     </div>
   )
