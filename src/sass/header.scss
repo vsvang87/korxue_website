@@ -38,6 +38,11 @@
                 border: 1px solid white;
                 padding: 1rem 1.5rem;
                 margin-left: 2.5rem;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    background: white;
+                    color: black;
+                }
             }
 
         }
@@ -67,6 +72,11 @@
                 text-decoration: none;
                 color: white;
                 padding: 1rem 2rem;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    background: white;
+                    color: black;
+                }
             }
         }
     }

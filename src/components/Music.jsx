@@ -10,8 +10,7 @@ const Music = ({videos}) => {
       <p>Videos</p>
         <div className="music-content">
           {videos.map((item) => (
-            <div key={item.id}>
-              <p>{item.name}</p>
+            <div key={item.id} className='music-card'>
               <ReactPlayer width="100%" height="300px" url={item.url}/>
             </div>
           ))}

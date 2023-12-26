@@ -1,0 +1,26 @@
+@use "colors" as *;
+@use "mixin" as *;
+
+
+.banner-section {
+    min-height: 30vh;
+    padding: 3rem 0;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url(../images/banner.jpg);
+        z-index: -1;
+        filter: brightness(40%);
+        opacity: 0.7;
+    }
+    .banner-content {
+        @include flex_center;
+        min-height: 30vh;
+        text-align: center;
+        .content {
+            
+        }
+    }
+}

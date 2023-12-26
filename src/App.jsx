@@ -6,6 +6,7 @@ import Music from './components/Music'
 import Contact from './components/Contact'
 import "./sass/style.scss";
 import VIDEOS from './components/musicData.js';
+import Banner from './components/Banner.jsx';
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <div>
      <Header/>
      <Hero/>
+     <Banner/>
      <Music videos={VIDEOS}/>
      <Contact/>
     </div>

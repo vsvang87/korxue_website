@@ -4,4 +4,12 @@
 .contact-section {
     min-height: 50vh;
     padding: 3rem 0;
+
+    .contact-content {
+        @include flex_space_between;
+
+        .input-group {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
 }
