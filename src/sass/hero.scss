@@ -5,22 +5,22 @@
     min-height: 90vh;
     position: relative;
     padding: 3rem 0;
-    &:after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background-image: url(../images/photo6.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        filter: brightness(50%);
-        opacity: .8;
-        background-attachment: fixed;
-    }
+    // &:after {
+    //     content: '';
+    //     position: absolute;
+    //     inset: 0;
+    //     background-image: url(../images/photo6.jpg);
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     z-index: -1;
+    //     filter: brightness(50%);
+    //     opacity: .8;
+    //     background-attachment: fixed;
+    // }
     .hero-content {
         @include flex_center;
-        min-height: 90vh;
+        min-height: 100vh;
         .content {
             @include flex_align_top;
             .col {

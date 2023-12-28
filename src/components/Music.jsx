@@ -1,15 +1,15 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
+import VIDEOS from "./musicData.js"
 
-
-const Music = ({videos}) => {
-
+const Music = () => {
+console.log(VIDEOS)
   return (
     <div className='music-section' id='music'>
       <div className="container">
       <p>Videos</p>
         <div className="music-content">
-          {videos.map((item) => (
+          {VIDEOS.map((item) => (
             <div key={item.id} className='music-card'>
               <ReactPlayer width="100%" height="300px" url={item.url}/>
             </div>

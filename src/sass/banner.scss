@@ -11,8 +11,11 @@
         position: absolute;
         inset: 0;
         background-image: url(../images/banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         z-index: -1;
-        filter: brightness(40%);
+        filter: brightness(20%);
         opacity: 0.7;
     }
     .banner-content {
@@ -20,7 +23,23 @@
         min-height: 30vh;
         text-align: center;
         .content {
-            
+            color: white;
+            .facebook-icon {
+                color: white;
+                font-size: 4rem;
+            }
+            h1 {
+                margin: 0;
+            }
+            .banner-btn-div {
+                margin-top: 2rem;
+                .follow-me-btn {
+                    border: 1px solid white;
+                    padding: 1rem 2rem;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
         }
     }
 }

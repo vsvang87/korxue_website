@@ -3,13 +3,18 @@
 @use "contact.scss";
 @use "music.scss";
 @use "banner.scss";
+@use "navbar.scss";
 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 html {
     scroll-behavior: smooth;
 }
 body {
-    padding: 0;
-    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 .container {

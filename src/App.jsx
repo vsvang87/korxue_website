@@ -1,12 +1,9 @@
 import { useState } from 'react'
-import banner from "./images/banner.jpg";
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Music from './components/Music'
-import Contact from './components/Contact'
+import {BrowserRouter} from 'react-router-dom'
+import Navigations from './routes/Navigations.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 import "./sass/style.scss";
-import VIDEOS from './components/musicData.js';
-import Banner from './components/Banner.jsx';
 
 
 
@@ -14,11 +11,11 @@ function App() {
 
   return (
     <div>
-     <Header/>
-     <Hero/>
-     <Banner/>
-     <Music videos={VIDEOS}/>
-     <Contact/>
+      <BrowserRouter>
+      <Navbar/>
+      <Navigations/>
+      <Footer/>
+      </BrowserRouter>
     </div>
   )
 }

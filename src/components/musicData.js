@@ -39,6 +39,26 @@ const VIDEOS = [
     name: "The Growth",
     url: "https://www.youtube.com/watch?v=s7ImDn4Y2ag",
   },
+  {
+    id: 9,
+    name: "What Happened to Korxue",
+    url: "https://www.youtube.com/watch?v=bwSiAQaKLps",
+  },
+  {
+    id: 10,
+    name: "Paper Plane",
+    url: "https://www.youtube.com/watch?v=P6bO31u6xMA",
+  },
+  {
+    id: 11,
+    name: "Understand Me",
+    url: "https://www.youtube.com/watch?v=NNlfSOa_Cis",
+  },
+  {
+    id: 12,
+    name: "How You Do That",
+    url: "https://www.youtube.com/watch?v=rbhDKt91YAw",
+  },
 ];
 
 export default VIDEOS;
