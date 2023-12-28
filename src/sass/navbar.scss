@@ -26,9 +26,13 @@
                 a {
                     text-decoration: none;
                     color: $textWhite;
+                    &:hover {
+                        color: $darkBlue;
+                    }
                 }
                 a.active {
-                    border-bottom: 1px solid $textWhite;
+                    border-bottom: 2px solid $darkBlue;
+                    color: $darkBlue;
                     padding-bottom: .5rem;
                 }
             }

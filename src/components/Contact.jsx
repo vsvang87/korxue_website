@@ -1,4 +1,6 @@
 import{useState} from 'react'
+import { MdEmail } from "react-icons/md";
+import { SiMinutemailer } from "react-icons/si";
 
 const Contact = () => {
 
@@ -10,23 +12,21 @@ const Contact = () => {
     e.preventDefault();
   }
   
-
-
   return (
     <div className='contact-section' id='contact'>
       <div className="container">
-        <h1>Book Me</h1>
+      
         <div className="contact-content">
-          <div className="contact-info info">1</div>
           <div className="contact-info contact-form">
+           
             <form action="" method='POST' onSubmit={formHandle}>
               <div className="input-group">
               <label htmlFor="name">Name</label>
-              <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+              <input type="text" value={name} onChange={(e) => setName(e.target.value)} required/>
               </div>
               <div className="input-group">
               <label htmlFor="email">Email</label>
-              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
               </div>
               <div className="input-group">
               <label htmlFor="message">Message</label>

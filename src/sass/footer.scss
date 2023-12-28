@@ -1,0 +1,12 @@
+@use "colors" as *;
+@use "mixin" as *;
+
+.footer-section {
+    min-height: 10vh;
+    padding: 3rem 0;
+    background: $offBlack;
+    .footer-content {
+        @include flex_center;
+        color: $textWhite;
+    }
+}

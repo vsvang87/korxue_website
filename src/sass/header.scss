@@ -18,6 +18,7 @@
         filter: brightness(50%);
         opacity: 0.8;
         z-index: -1;
+        background-attachment: fixed;
     }
     .nav-content {
         padding-top: 2rem;
@@ -57,11 +58,12 @@
         letter-spacing: 0.1rem;
         margin: 0 0;
     }
+   
     h1 {
         font-size: 4.5rem;
         font-family: 'Kanit', sans-serif;
-        
     }
+   
     .content {
         width: 80%;
         text-align: center;
@@ -74,8 +76,9 @@
                 padding: 1rem 2rem;
                 transition: 0.2s ease-in-out;
                 &:hover {
-                    background: white;
-                    color: black;
+                    background: $darkBlue;
+                
+                    border: 1px solid $darkBlue;
                 }
             }
         }
