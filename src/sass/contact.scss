@@ -2,44 +2,64 @@
 @use "mixin" as *;
 
 .contact-section {
-    min-height: 50vh;
+    min-height: 40vh;
     padding: 3rem 0;
     background: $textWhite;
     .contact-content {
+        @include flex_center;
+        min-height: 40vh;
         .contact-info {
-            form {
-                width: 100%;
-                @include flex_center;
-                flex-direction: column;
-                .input-group {
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    width: 50%;
-                    margin: 1rem 0;
-                    input, textarea {
-                        font-family: Arial, Helvetica, sans-serif;
-                        width: 100%;
-                        outline: none;
-                        border: 1px solid lightgray;
-                        padding: 1rem 0.5rem;
-                        resize: none;
-                    }
-                    button {
-                        padding: 1rem 2rem;
-                        border: none;
-                        background: $darkBlue;
-                        cursor: pointer;
-                        font-size: 1.1rem;
-                        color: $textWhite;
-                        transition: 0.2s ease-in-out;
-                        &:hover {
-                            background: $darkGray;
-                        }
-                    }
+            text-align: center;
+            h3 {
+                padding-bottom: 2rem;
+                
+            }
+            .email-icon {
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                @include mediaQuery505px {
+                    font-size: 2rem;
+                }
+                .icon {
+                    margin-right: 1rem;
+                    color: $darkBlue;
                 }
             }
+            // form {
+            //     width: 100%;
+               
+            //     @include flex_center;
+            //     flex-direction: column;
+            //     .input-group {
+            //         display: flex;
+            //         justify-content: center;
+            //         align-items: flex-start;
+            //         flex-direction: column;
+            //         width: 50%;
+            //         margin: 1rem 0;
+            //         input, textarea {
+            //             font-family: Arial, Helvetica, sans-serif;
+            //             width: 100%;
+            //             outline: none;
+            //             border: 1px solid lightgray;
+            //             padding: 1rem 0.5rem;
+            //             resize: none;
+            //         }
+            //         button {
+            //             padding: 1rem 2rem;
+            //             border: none;
+            //             background: $darkBlue;
+            //             cursor: pointer;
+            //             font-size: 1.1rem;
+            //             color: $textWhite;
+            //             transition: 0.2s ease-in-out;
+            //             &:hover {
+            //                 background: $darkGray;
+            //             }
+            //         }
+            //     }
+            // }
         }
        
     }

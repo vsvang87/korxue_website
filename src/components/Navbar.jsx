@@ -9,8 +9,8 @@ const Navbar = () => {
                     <p><Link to="/" >Korxue Y.</Link></p>
                 </div>
                 <ul className='nav-links'>
-                    <li><NavLink to="/music" className={({isActive}) => isActive ? "active" : ""}>Music + Videos</NavLink></li>
-                    <li><NavLink to="/performance">Performance</NavLink></li>
+                    <li><NavLink to="/music" className={({isActive}) => isActive ? "active" : ""}>Music</NavLink></li>
+                    <li><NavLink to="/photo">Photos</NavLink></li>
                     <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
             </nav>

@@ -3,9 +3,9 @@
 
 
 .banner-section {
-    padding: 3rem 0;
+padding: 3rem 0;
    background: $darkBlue;
-   min-height: 20vh;
+   min-height: 30vh;
    .banner-content {
     @include flex_center;
     flex-direction: column;
@@ -14,13 +14,23 @@
         color: $textWhite;
         font-size: 3rem;
     }
-    h1, a {
+    h1 {
+        margin: 0.5rem 0;
+        color: $textWhite;
+        text-decoration: none;
+        letter-spacing: .1rem;
+        font-size: 1.2rem;
+        @include mediaQuery505px {
+            font-size: 2rem;
+        }
+    }
+    a {
         margin: 0.5rem 0;
         color: $textWhite;
         text-decoration: none;
     }
     .btn-div {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         .follow-me-btn {
             border: 1px solid $textWhite;
             padding: 1rem 2rem;

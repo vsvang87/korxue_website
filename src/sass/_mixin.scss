@@ -18,3 +18,23 @@
     justify-content: center;
     align-items: flex-start;
 }
+@mixin mediaQuery378px {
+    @media (min-width: 378px) {
+        @content
+    }
+}
+@mixin mediaQuery425px {
+    @media (min-width: 425px) {
+        @content
+    }
+}
+@mixin mediaQuery505px {
+    @media (min-width: 505px) {
+        @content
+    }
+}
+@mixin mediaQuery1150px {
+    @media (min-width: 1150px) {
+        @content
+    }
+}

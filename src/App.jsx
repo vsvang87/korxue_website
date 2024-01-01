@@ -7,9 +7,7 @@ import Footer from './components/Footer.jsx';
 import "./sass/style.scss";
 
 
-
 function App() {
-
   return (
     <div>
       <BrowserRouter>

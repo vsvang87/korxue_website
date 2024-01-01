@@ -1,18 +1,19 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Header from '../components/Header';
-import Hero from '../components/Hero';
 import Music from '../components/Music'
 import Contact from '../components/Contact'
-import Performance from '../components/Performance';
+import Photos from '../components/Photos';
 
-const Navigations = ({videos}) => {
+
+const Navigations = () => {
+
   return (
     <div>
         <Routes>
             <Route path='/' element={<Header/>}/>
-            <Route path='/performance' element={<Performance/>}/>
-            <Route path='/music' element={<Music/>} videos={videos}/>
+            <Route path='/photo' element={<Photos/>} />
+            <Route path='/music' element={<Music/>}/>
             <Route path='/contact' element={<Contact/>} />
         </Routes>
     </div>
